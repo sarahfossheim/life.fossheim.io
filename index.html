@@ -1,0 +1,39 @@
+---
+layout: base.liquid
+title: "Sarah Fossheim"
+pageId: front
+pageTitle: "Sarah Fossheim"
+pagination:
+  data: collections.sortedPosts
+  size: 10
+---
+
+<div class="container">
+    {% for post in pagination.items  %}
+        {% include post.liquid post:post %}
+    {% endfor %}
+</div>
+
+<p class="container links">
+    <a href="https://patreon.com/fossheim" class="box xsmall medium-type">Support me on Patreon</a>
+    <a href="https://fossheim.io/writing" class="box xsmall medium-type">Read my tech thoughts</a>
+</p>
+
+<nav class="container">
+    {% if pagination.previousPageHref %}
+        <p><a href="{{pagination.previousPageHref}}">Newer</a></p>
+    {% else %}
+        <p>Newer</p>
+    {% endif %}
+
+    {% if pagination.nextPageHref %}
+        <p><a href="{{pagination.nextPageHref}}">Older</a></p>
+    {% else %}
+        <p>Older</p>
+    {% endif %}
+
+</nav>
+
+
+
+

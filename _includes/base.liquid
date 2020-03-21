@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='icon' href='/favicon.ico' type='image/x-icon'/>
+        <link rel="stylesheet" href="/styles/variables.css">
+        <link rel="stylesheet" href="/styles/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Archivo:400,600,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    </head>
+    <body id={{pageId}}>   
+        <hr />
+
+        {% include components/header.liquid %}
+
+        <main>
+            {{content}} 
+        </main>
+
+        <hr />
+
+        {% include components/footer.liquid %}
+
+    </body>
+</html>

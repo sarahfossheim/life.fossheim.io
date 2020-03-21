@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 24px;
+}
+
+body {
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+::selection {
+    background-color: #22D2A0;
+}
+
+hr {
+    display: block;
+    height: 20px;
+    background-color: white;
+    background-image: radial-gradient(#22D2A0 20%, transparent 20%), radial-gradient(#EEFBF8 30%, transparent 30%);
+    background-size: 3px 3px, 3px 3px;
+    background-position: 0 0, 1.5px 1.5px;
+    border: none;
+    outline: none;
+}
+
+header, main, footer {
+    width: var(--container);
+    max-width: var(--container-perc);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    letter-spacing: 1px;
+    margin: 150px 0;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 4.3rem;
+    color: #FF9C55;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 12px;
+    margin-bottom: 12px;
+}
+
+nav.container {
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    margin-bottom: 100px;
+}
+
+nav.container p:last-child {
+    text-align: right;
+}
+
+nav.container p {
+    color: var(--color-text-light);
+}
+
+nav.container p a, nav.container p a:visited {
+    color: var(--color-text);
+}
+
+.box {
+    display: block;
+    border: 3px solid var(--color-text);
+    min-height: 300px;
+    height: auto;
+    padding: 40px 30px 10px 40px;
+    position: relative;
+    /* align-self: start; */
+}
+
+.box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.box p.label {
+    font-size: 0.583333rem;
+    font-family: "Archivo", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.box p.label.right {
+    text-align: right;
+    opacity: 0.75;
+    position: absolute;
+    bottom: 0;
+    right: 13px;
+}
+
+.box p a, .box p a:hover, .box p a:visited, .box ul li a, .box ul li a:visited {
+    color: var(--color-text);
+}
+
+.box ul, .box ol {
+    font-size: 1rem;
+    list-style-position: inside;
+    margin-top: 15px;
+    line-height: 32px;
+}
+
+.large {
+    grid-column: 1 / span 2;
+}
+
+.small {
+    min-height: 200px;
+}
+
+.xsmall {
+    min-height: 100px;
+}
+
+.box h2 {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-bottom: 13px;
+}
+
+.box.large-type p:not(.label) {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+.box.medium-type  {
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding: 33px 30px 10px 40px;
+}
+
+.container.links a, .container.links a:visited {
+    color: var(--color-text);
+}
+
+.container.links a:first-child {
+    background-color: var(--color-6);
+}
+
+.container.links a:last-child {
+    background-color: var(--color-7);
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    /* margin: 100px auto; */
+    /* border-top: 3px solid var(--color-text); */
+    padding: 100px 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+footer div:nth-child(2) {
+    text-align: center;
+}
+
+footer div:nth-child(3) {
+    text-align: right;
+}
+
+footer .pronouns {
+    font-size: 1.3rem;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    text-transform: uppercase;
+}
+
+footer a, footer a:active, footer a:visited {
+    color: var(--color-text);
+}
+
+h1 {
+    text-shadow: -1px -1px var(--shadow-color-5),
+        -1px -0.75px var(--shadow-color-5),
+        -1px -0.5px var(--shadow-color-5),
+        -1px -0.25px var(--shadow-color-5),
+        -1px 0px var(--shadow-color-5),
+        1px -1px var(--shadow-color-5),
+        1px -0.75px var(--shadow-color-5),
+        1px -0.5px var(--shadow-color-5),
+        1px -0.25px var(--shadow-color-5),
+        1px 0px var(--shadow-color-5),
+        0px 1px var(--shadow-color-5),
+        -0.25px 1px var(--shadow-color-5),
+        -0.5px 1px var(--shadow-color-5),
+        -0.75px 1px var(--shadow-color-5),
+        -1px 1px var(--shadow-color-5),
+        0 0.25px var(--shadow-color-5),
+        0 0.5px var(--shadow-color-5),
+        0 0.75px var(--shadow-color-5),
+        -0.75px 0.75px var(--shadow-color-5),
+        -0.25px 0.25px var(--shadow-color-5),
+        1px 0.25px var(--shadow-color-5),
+        1px 0.5px var(--shadow-color-5),
+        1px 0.75px var(--shadow-color-5),
+        1px 1px var(--shadow-color-5),
+        0px 6px var(--shadow-color-5),
+        -1px 6px var(--shadow-color-5), 
+        -1px 5px var(--shadow-color-5), -1px 5.75px var(--shadow-color-5), -1px 5.5px var(--shadow-color-5), -1px 5.25px var(--shadow-color-5),
+        -1px 4px var(--shadow-color-5), -1px 4.75px var(--shadow-color-5), -1px 4.5px var(--shadow-color-5), -1px 4.25px var(--shadow-color-5),
+        -1px 3px var(--shadow-color-5), -1px 3.75px var(--shadow-color-5), -1px 3.5px var(--shadow-color-5), -1px 3.25px var(--shadow-color-5),
+        -1px 2px var(--shadow-color-5), -1px 2.75px var(--shadow-color-5), -1px 2.5px var(--shadow-color-5), -1px 2.25px var(--shadow-color-5),
+        -1px 1px var(--shadow-color-5), -1px 1.75px var(--shadow-color-5), -1px 1.5px var(--shadow-color-5), -1px 1.25px var(--shadow-color-5),
+        1px 5px var(--shadow-color-5), 1px 5.75px var(--shadow-color-5), 1px 5.5px var(--shadow-color-5), 1px 5.25px var(--shadow-color-5),
+        1px 4px var(--shadow-color-5), 1px 4.75px var(--shadow-color-5), 1px 4.5px var(--shadow-color-5), 1px 4.25px var(--shadow-color-5),
+        1px 3px var(--shadow-color-5), 1px 3.75px var(--shadow-color-5), 1px 3.5px var(--shadow-color-5), 1px 3.25px var(--shadow-color-5),
+        1px 2px var(--shadow-color-5), 1px 2.75px var(--shadow-color-5), 1px 2.5px var(--shadow-color-5), 1px 2.25px var(--shadow-color-5),
+        1px 1px var(--shadow-color-5), 1px 1.75px var(--shadow-color-5), 1px 1.5px var(--shadow-color-5), 1px 1.25px var(--shadow-color-5);
+}
+h1 span:nth-child(2n) {
+    color: var(--shadow-color);
+}
+
+h1 span:nth-child(3n) {
+    color: #FFD913;
+}
+
+h1 span:nth-child(5n) {
+    color: #555BFF;
+}
+
+h1 span:nth-child(7n), .logo-6 span:nth-child(12n) {
+    color: #FF5555;
+}
+
+.box {
+    background-color: var(--color-1);
+}
+
+.box:nth-child(2n) {
+    background-color: var(--color-2);
+}
+
+.box:nth-child(3n) {
+    background-color: var(--color-3);
+}
+
+.box:nth-child(4n) {
+    background-color: var(--color-4);
+}
+
+.box:nth-child(5n) {
+    background-color: var(--color-5);
+}
+
+.box:nth-child(6n) {
+    background-color: var(--color-2);
+}
+
+.box:nth-child(8n) {
+    background-color: var(--color-4);
+}
+
+.box:nth-child(11n) {
+    background-color: var(--color-3);
+}
+
+.box:nth-child(13n) {
+    background-color: var(--color-4);
+}
+
+.scatter span {
+    position: relative;
+    animation: scatter 2s infinite;
+}
+
+.scatter span:nth-child(2n) {
+    animation-delay: 0.3s;
+}
+
+.scatter span:nth-child(3n) {
+    animation-delay: 0.15s;
+}
+
+.scatter span:nth-child(5n) {
+    animation-delay: 0.4s;
+}
+
+.scatter span:nth-child(7n) {
+    animation-delay: 0.25s;
+}
+
+.scatter span:nth-child(9n) {
+    animation-delay: 0.15s;
+}
+
+  
+@keyframes scatter {
+    0% {
+      top: 0;
+    }
+    50% {
+      top: -10px;
+    }
+    100% {
+      top: 0;
+    }
+  }
+
+@media screen and (max-width: 960px) {
+    .box {
+        grid-column: 1 / span 2;
+        min-height: 100px;
+    }
+
+    .scatter span {
+        animation: none;
+    }
+
+    footer div {
+        grid-column: 1 / span 3;
+        margin-bottom: 40px;
+        text-align: left !important;
+    }
+
+    h1 {
+        width: 100%;
+        font-size: 2.6rem;
+        margin: 75px 0;
+    } 
+}

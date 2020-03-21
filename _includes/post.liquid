@@ -1,0 +1,8 @@
+<article class="{{ post.data.classes }}">
+    <p class="label">{{ post.data.subtitle }}</p>
+    {% if post.data.pageTitle %}
+        <h2>{{ post.data.pageTitle }}</h2>
+    {% endif %}
+    {{ post.templateContent | safe }}
+    <p class="label right">{{ post.data.date }}</p>
+</article>

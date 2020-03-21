@@ -1,0 +1,21 @@
+:root {
+   --color-1: #F5B88A;
+   --color-2: #FBE279;
+   --color-3: #A0CEBF;
+   --color-4: #B4CCFC;
+   --color-5: #FBC4C2;
+   --color-6: #F1C2FB;
+   --color-7: #A9B0FA;
+
+   --color-text: #234D3C;
+   --color-text-light: #A7B8B1;
+
+   --container: 1075px;
+   --container-perc: 90vw;
+
+   --shadow-color: #F47AFF;
+   --shadow-color-2: #FF9C55;
+   --shadow-color-3: #6EC0A9;
+   --shadow-color-4: #FF5555;
+   --shadow-color-5: #0D4E3B;
+}
