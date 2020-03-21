@@ -109,9 +109,10 @@ nav.container p a, nav.container p a:visited {
 
 .box ul, .box ol {
     font-size: 1rem;
-    list-style-position: inside;
     margin-top: 15px;
     line-height: 32px;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
 }
 
 .large {
