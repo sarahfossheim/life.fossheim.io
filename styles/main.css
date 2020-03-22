@@ -110,7 +110,7 @@ nav.container p a, nav.container p a:visited {
 .box ul, .box ol {
     font-size: 1rem;
     margin-top: 15px;
-    line-height: 32px;
+    line-height: 1.3rem;
     padding-bottom: 1rem;
     padding-left: 1rem;
 }
@@ -320,6 +320,10 @@ h1 span:nth-child(7n), .logo-6 span:nth-child(12n) {
         font-size: 22px;
     }
 
+    body {
+        overflow-x: hidden;
+    }
+
     .box.large-type p:not(.label) {
         font-size: 2rem;
     }
@@ -344,4 +348,20 @@ h1 span:nth-child(7n), .logo-6 span:nth-child(12n) {
         font-size: 2.6rem;
         margin: 75px 0;
     } 
+}
+
+@media screen and (max-width: 460px) {
+    .container.links a {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 18px;
+    }
+
+    .container.links a {
+        padding-top: 1.5rem;
+    }
 }
