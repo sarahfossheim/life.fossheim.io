@@ -119,6 +119,10 @@ nav.container p a, nav.container p a:visited {
     grid-column: 1 / span 2;
 }
 
+.large.thin {
+    min-height: 130px;
+}
+
 .small {
     min-height: 200px;
 }
