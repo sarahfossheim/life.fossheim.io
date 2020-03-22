@@ -316,6 +316,14 @@ h1 span:nth-child(7n), .logo-6 span:nth-child(12n) {
   }
 
 @media screen and (max-width: 960px) {
+    html {
+        font-size: 22px;
+    }
+
+    .box.large-type p:not(.label) {
+        font-size: 2rem;
+    }
+
     .box {
         grid-column: 1 / span 2;
         min-height: 100px;
