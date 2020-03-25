@@ -22,7 +22,7 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
    :root {
       --color-text: #A0CEBF;
       --color-text-light: #A7B8B1;
@@ -36,4 +36,4 @@
       --color-6: #152E24;
       --color-7: #152E24;
    }
-}
+} */
