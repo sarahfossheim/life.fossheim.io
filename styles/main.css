@@ -74,7 +74,7 @@ nav.container p a, nav.container p a:visited {
 
 .box {
     display: block;
-    border: 3px solid var(--color-text);
+    border: 3px solid var(--color-border);
     min-height: 300px;
     height: auto;
     padding: 40px 30px 10px 40px;
@@ -373,3 +373,4 @@ h1 span:nth-child(7n), .logo-6 span:nth-child(12n) {
         padding-top: 1.5rem;
     }
 }
+
