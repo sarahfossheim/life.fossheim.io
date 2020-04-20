@@ -31,7 +31,7 @@ hr {
 
 header, main, footer {
     width: var(--container);
-    max-width: var(--container-perc);
+    max-width: var(--containear-perc);
     margin-left: auto;
     margin-right: auto;
 }
@@ -103,7 +103,7 @@ nav.container p a, nav.container p a:visited {
     right: 13px;
 }
 
-.box p a, .box p a:hover, .box p a:visited, .box ul li a, .box ul li a:visited {
+.box * a, .box * a:visited {
     color: var(--color-text);
 }
 
